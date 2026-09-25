@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-ofr-funding",
+  "version": "0.1.0",
+  "description": "OFR Short-Term Funding Monitor API — data.financialresearch.gov/v1, keyless,",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-ofr-funding": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ofr-funding"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-ofr-funding.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-0abb695f4d022df588a1ee3fa65c6875f48bf63ee9482a491f4615dfc9742e04",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+  }
+}
