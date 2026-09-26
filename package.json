@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ofr-funding",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OFR Short-Term Funding Monitor API — data.financialresearch.gov/v1, keyless,",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0abb695f4d022df588a1ee3fa65c6875f48bf63ee9482a491f4615dfc9742e04",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-676407cc5f86a0ba5e2400d7956ef32453e4a87300cdebbb758443914ed53429",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
