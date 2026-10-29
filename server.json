@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/ofr-funding",
   "title": "Ofr Funding",
   "description": "OFR Short-Term Funding Monitor API — data.financialresearch.gov/v1, keyless, no auth wall. The…",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/ofr-funding",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-ofr-funding",

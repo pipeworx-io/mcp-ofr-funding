@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ofr-funding",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "OFR Short-Term Funding Monitor API — data.financialresearch.gov/v1, keyless, no auth wall. The Office of Financial Research (US Treasury) publishes collateral- and tenor-level US repo market data (DVP, GCF, and tri-party segments) and money-market-fund balance-sheet composition, both series the NY…",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ofr-funding": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ofr-funding"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ofr-funding.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ofr-funding",
   "pipeworx": {
-    "sourceHash": "v1-0359673f26896a92200f6b3cbe9605f652472ed18c9d47b488becf045f88ee3c",
-    "sourceCommit": "f54ad77e789f27fe393978f9c080b5b18c87bb4f"
+    "mode": "gateway",
+    "slug": "ofr-funding",
+    "gatewaySlug": "ofr-funding",
+    "sourceHash": "v1-83993113b4a5a6b5e6e0e19e70be4fc02c9183aa620758d5390e65c9980d7034",
+    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
   }
 }
